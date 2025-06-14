@@ -16,7 +16,7 @@ const Technologies = () => {
       <div className="max-w-screen-xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-10">
-          <h2 className="sm:text-4xl md:text-5xl font-bold text-[#233142]">Technologies</h2>
+          <h2 className="sm:text-3xl md:text-4xl lg:text-5xl xl:6xl font-bold text-[#233142]">Technologies</h2>
           <div className="h-1 w-24 bg-[#f95959] mx-auto mt-4 mb-2 rounded-full" />
         </div>
 

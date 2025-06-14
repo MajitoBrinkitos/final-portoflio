@@ -62,7 +62,7 @@ useEffect(() => {
 
     return(
         <>
-        <div id="home" className="pt-[100px] sm:pt-[100px] bg-gradient-to-b from-[#e3e3e3] via-[#e3e3e3] to-[#f95959] text-white w-full min-h-screen px-4 sm:px-6 lg:px-20 py-12 flex flex-col md:flex-row items-center justify-center gap-12">
+        <div id="home" className="pt-[100px] sm:pt-[100px] bg-gradient-to-b from-[#e3e3e3] via-[#e3e3e3] to-[#f95959] text-white w-full min-h-screen px-4 sm:px-6 lg:px-20 py-12 xl:h-full xl:py-32 flex flex-col md:flex-row items-center justify-center gap-12">
             <div className="container mx-auto flex flex-col-reverse md:flex-row items-center px-6 py-6">
                 {/* Left Content */}
                 <div className="w-full md:w-1/2 md:h-full space-y-6 mt-10 md:mt-0">
