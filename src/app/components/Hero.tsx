@@ -70,14 +70,17 @@ useEffect(() => {
                     <span ref={text1} className="block font-[Viaoda] text-[#233142]">Hello there! I’m</span>
                     <span ref={text2} className="block text-[#f95959] font-[Parisienne]">María José Mejía</span>
                 </h1>
-                <p className="text-[#455d7a] leading-relaxed text-center">
+                <p className="text-[#233142] leading-relaxed text-center">
                     Passionate Front-end Developer and Web Designer. <br />
                     Creating user-friendly and visually appealing websites.
                 </p>
                 
                 <div className="sm:flex sm:justify-center sm:items-center">
-                <Link href='/contact' passHref className="bottom-6 transform border-x-4 border-black hover:border-transparent text-black hover:text-white hover:bg-[#f96d00] rounded-full font-semibold py-2 px-2.5 text-[20px] hover:font-[Viaoda] sm:flex sm:justify-center sm:w-72 sm:text-[18px]">
+                <Link href='/contact' passHref className="bottom-6 transform border-x-4 border-black hover:border-white text-black hover:text-white hover:bg-[#45171d] rounded-full font-semibold py-2 px-2.5 text-[20px] hover:font-[Viaoda] sm:flex sm:justify-center sm:w-72 sm:text-[18px]">
                     Let's work together
+                    <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <path fillRule="evenodd" d="M10.271 5.575C8.967 4.501 7 5.43 7 7.12v9.762c0 1.69 1.967 2.618 3.271 1.544l5.927-4.881a2 2 0 0 0 0-3.088l-5.927-4.88Z" clip-rule="evenodd"/>
+                    </svg>
                 </Link>
                 </div>
                 
