@@ -9,10 +9,18 @@ module.exports = {
     extend: {
       fontFamily: {
         gabriela: ['"Gabriela"', 'serif'],
+        viaoda: ['"Viaoda Libre"', 'serif', 'cursive'],
+        oswald: ["'Oswald'", 'sans-serif'],
+        parisienne: ['"Parisienne"', 'cursive'],
       },
       keyframes: {
+        'pulse-border': {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '100%': { transform: 'scale(1.5)', opacity: '0' },
+        },
       },
       animation: {
+        'pulse-border': 'pulse-border 1.5s linear infinite',
       },
     },
   },
