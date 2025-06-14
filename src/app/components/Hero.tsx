@@ -79,7 +79,7 @@ useEffect(() => {
                 <Link href='/contact' passHref className="bottom-6 transform border-x-4 border-black hover:border-white text-black hover:text-white hover:bg-[#45171d] rounded-full font-semibold py-2 px-2.5 text-[20px] hover:font-[Viaoda] sm:flex sm:justify-center sm:w-72 sm:text-[18px]">
                     Let's work together
                     <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path fillRule="evenodd" d="M10.271 5.575C8.967 4.501 7 5.43 7 7.12v9.762c0 1.69 1.967 2.618 3.271 1.544l5.927-4.881a2 2 0 0 0 0-3.088l-5.927-4.88Z" clip-rule="evenodd"/>
+                    <path fillRule="evenodd" d="M10.271 5.575C8.967 4.501 7 5.43 7 7.12v9.762c0 1.69 1.967 2.618 3.271 1.544l5.927-4.881a2 2 0 0 0 0-3.088l-5.927-4.88Z" clipRule="evenodd"/>
                     </svg>
                 </Link>
                 </div>
@@ -117,6 +117,7 @@ useEffect(() => {
                 </div>
             </div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f95959" fillOpacity="1" d="M0,160L24,176C48,192,96,224,144,245.3C192,267,240,277,288,245.3C336,213,384,139,432,122.7C480,107,528,149,576,181.3C624,213,672,235,720,229.3C768,224,816,192,864,149.3C912,107,960,53,1008,74.7C1056,96,1104,192,1152,224C1200,256,1248,224,1296,176C1344,128,1392,64,1416,32L1440,0L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
         </>
     );
 }
