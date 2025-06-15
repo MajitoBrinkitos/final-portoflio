@@ -96,6 +96,69 @@ function Portfolio(){
                 </div>
                 ))}
             </div>
+
+            {/*------Team Projects */}
+
+            <div className="max-w-screen-xl text-start mb-12 pt-[60px]">
+                <span className="text-[20px] text-[#ff2400] font-[Lexend Deca]">Team Projects</span>
+            </div>
+
+            <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                {projects.map((project, index) => (
+                <div key={index} className="bg-[#45315d] rounded-lg shadow-md overflow-hidden hover:shadow-violet-900 transition-shadow duration-300 p-3">
+                    <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={600}
+                    height={400}
+                    className="w-full h-56 object-cover"
+                    />
+                    <div>
+                    <h3 className="text-xl rounded-5 font-semibold text-[#f2f4fb] mb-2">{project.title} - {project.year}</h3>
+                    <p className="text-[#f2f4fb] text-sm mb-4">{project.description}</p>
+                    <div className="flex gap-4">
+                        <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-[#ff2400] hover:underline">
+                        Live Demo
+                        </a>
+                        <a href={project.code} target="_blank" rel="noopener noreferrer" className="text-[#ff9280] hover:underline">
+                        Source Code
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                ))}
+            </div>
+
+            {/*----What's next*/}
+            <div className="max-w-screen-xl text-start mb-12 pt-[60px]">
+                <span className="text-[20px] text-[#ff2400] font-[Lexend Deca]">In progress</span>
+            </div>
+
+                        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                {projects.map((project, index) => (
+                <div key={index} className="bg-[#45315d] rounded-lg shadow-md overflow-hidden hover:shadow-violet-900 transition-shadow duration-300 p-3">
+                    <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={600}
+                    height={400}
+                    className="w-full h-56 object-cover"
+                    />
+                    <div>
+                    <h3 className="text-xl rounded-5 font-semibold text-[#f2f4fb] mb-2">{project.title} - {project.year}</h3>
+                    <p className="text-[#f2f4fb] text-sm mb-4">{project.description}</p>
+                    <div className="flex gap-4">
+                        <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-[#ff2400] hover:underline">
+                        Live Demo
+                        </a>
+                        <a href={project.code} target="_blank" rel="noopener noreferrer" className="text-[#ff9280] hover:underline">
+                        Source Code
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                ))}
+            </div>
         </div>
         </>
     );
