@@ -12,6 +12,7 @@ module.exports = {
         viaoda: ['"Viaoda Libre"', 'serif', 'cursive'],
         oswald: ["'Oswald'", 'sans-serif'],
         parisienne: ['"Parisienne"', 'cursive'],
+        lexend: ['"Lexend Deca"', 'sans-serif'],
       },
       keyframes: {
         'pulse-border': {

@@ -44,7 +44,7 @@ export default function Navbar() {
           ref={navLinksRef}
           >
              <li>
-                <Link href="/about" className="navbar-typo text-[#233142] hover:text-[30px] text-[20px] sm:text-[22px] lg:text-[24px] hover:font-gabriela px-[0.7rem] capitalize font-semibold">About Me</Link>
+                <Link href="#about" className="navbar-typo text-[#233142] hover:text-[30px] text-[20px] sm:text-[22px] lg:text-[24px] hover:font-gabriela px-[0.7rem] capitalize font-semibold">About Me</Link>
             </li>
             <li><Link href="/portfolio" className="navbar-typo text-[#233142] hover:text-[30px] text-[20px] sm:text-[22px] lg:text-[24px] px-[0.7rem] capitalize font-semibold">Portfolio</Link></li>
             <li><Link href="/blog" className="navbar-typo text-[#233142] hover:text-[30px] text-[20px] sm:text-[22px] lg:text-[24px] px-[0.7rem] capitalize font-semibold">Blog</Link></li>

@@ -4,7 +4,7 @@ import Image from "next/image";
 const MyStory = () => {
   return (
     <>
-    <div id="my-story" className="bg-gradient-to-b from-[#ffffff] via-[#faf6e9] to-[#ece8d9] px-4 sm:px-6 lg:px-20 py-16">
+    <div id="about" className="bg-gradient-to-b from-[#ffffff] via-[#faf6e9] to-[#ece8d9] px-4 sm:px-6 lg:px-20 py-16">
       <div className="max-w-screen-xl mx-auto">
         {/* Section Heading */}
         <div className="text-center mb-12">
