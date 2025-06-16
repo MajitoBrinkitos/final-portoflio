@@ -44,7 +44,7 @@ const MyStory = () => {
           },
           {
             title: "Digital Learning Designing",
-            desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, incidunt! Optio illo labore ad ab? Voluptates culpa laudantium minima tenetur vel!",
+            desc: "Volunteering in education was a great way for me to apply my skills and develop new ones. I especially learned how to teach and share my knowledge effectively.",
             img: "/images/story/tutorial.png",
             icon: "fa-graduation-cap",
             reverse: false,
@@ -65,12 +65,12 @@ const MyStory = () => {
                 {item.title}
               </h3>
               <p className="text-[#455d7a]">{item.desc}</p>
-              <button className="inline-flex items-center px-6 py-2 rounded-full border-2 border-[#45171d] hover:border-transparent text-[#45171d] font-medium hover:bg-[#f95959] hover:text-white active:scale-95 transition-transform">
+{/*               <button className="inline-flex items-center px-6 py-2 rounded-full border-2 border-[#45171d] hover:border-transparent text-[#45171d] font-medium hover:bg-[#f95959] hover:text-white active:scale-95 transition-transform">
                 Learn more
                 <span className="ml-2">
                   <i className="fas fa-arrow-right" />
                 </span>
-              </button>
+              </button> */}
             </div>
 
             {/* Image */}
