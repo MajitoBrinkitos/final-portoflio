@@ -64,7 +64,7 @@ const MyStory = () => {
               <h3 className="text-2xl sm:text-3xl font-semibold text-[#233142]">
                 {item.title}
               </h3>
-              <p className="text-[#455d7a]">{item.desc}</p>
+              <p className="text-[#455d7a] text-xl">{item.desc}</p>
 {/*               <button className="inline-flex items-center px-6 py-2 rounded-full border-2 border-[#45171d] hover:border-transparent text-[#45171d] font-medium hover:bg-[#f95959] hover:text-white active:scale-95 transition-transform">
                 Learn more
                 <span className="ml-2">

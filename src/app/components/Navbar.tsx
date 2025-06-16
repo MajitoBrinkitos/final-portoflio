@@ -27,7 +27,7 @@ export default function Navbar() {
 const handleDonationClick = () => {
   toast.info("☕ Coffee eTransfered!! Thanks for your support!", {
     position: "bottom-right",
-    autoClose: 5000,
+    autoClose: 4000,
     theme: "colored"
   });
 };
