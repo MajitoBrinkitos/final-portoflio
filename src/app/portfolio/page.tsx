@@ -8,27 +8,9 @@ import gsap from "gsap";
 
 function Portfolio(){
 
-    /*Title paragraphs */
+            /*Title paragraphs */
     const text1 = useRef(null);
     const text2 = useRef(null);
-
-    useEffect(() => {
-        const ctx = gsap.context(() => {
-            gsap.fromTo(
-            text1.current,
-            { opacity: 0, y: 30 },
-            { opacity: 1, y: 0, duration: 2, ease: "power2.out" }
-            );
-            gsap.fromTo(
-            text2.current,
-            { opacity: 0, y: 30 },
-            { opacity: 1, y: 0, duration: 2, ease: "power2.out", delay: 0.6 }
-            );
-        });
-
-        return () => ctx.revert();
-        }, []);
-
     /*Grid */
         const projects = [
     {
@@ -75,6 +57,25 @@ function Portfolio(){
     }
     ];
 
+
+
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            gsap.fromTo(
+            text1.current,
+            { opacity: 0, y: 30 },
+            { opacity: 1, y: 0, duration: 2, ease: "power2.out" }
+            );
+            gsap.fromTo(
+            text2.current,
+            { opacity: 0, y: 30 },
+            { opacity: 1, y: 0, duration: 2, ease: "power2.out", delay: 0.6 }
+            );
+        });
+
+        return () => ctx.revert();
+        }, []);
 
     return(
         <>
