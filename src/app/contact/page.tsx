@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useRef, useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 import Toast from '../components/Toast';
 
@@ -21,6 +23,14 @@ function Contact(){
             });
         };
 
+        const handleDonationClick = () => {
+            toast.info("☕ Simulating coffee purchase... Thanks for your support!", {
+                position: "bottom-right",
+                autoClose: 3000,
+                theme: "colored"
+            });
+            };
+
 return(
         <>
         {toast && <Toast message={toast.message} type={toast.type} onClose={() => setToast(null)} />}
@@ -35,13 +45,13 @@ return(
                     {/*First Name */}
                     <div>
                         <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-gray-900">First name</label>
-                        <input type="text" id="first_name" className="bg-[#b7b7b7] border border-gray-300 text-[#3d0240] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your first name" required />
+                        <input type="text" id="first_name" className="bg-[#b7b7b7] border border-gray-300 text-[#3d0240] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-600 dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your first name" required />
                     </div>
 
                     {/*Email */}
                     <div>
                         <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">Your email</label>
-                        <input type="email" name="email" id="email" className="bg-[#b7b7b7] border border-gray-300 text-[#3d0240] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-500 dark:placeholder-gray-400" placeholder="email@example.com" required />
+                        <input type="email" name="email" id="email" className="bg-[#b7b7b7] border border-gray-300 text-[#3d0240] text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:border-gray-500" placeholder="email@example.com" required />
                     </div>
 
                     {/*Message */}
@@ -49,7 +59,7 @@ return(
                         <label htmlFor="message" className="block mb-2 text-sm font-medium text-black">
                             Your message
                         </label>
-                        <textarea name="message" id="message" rows={4} className="block p-2.5 w-full text-sm text-[#3d0240] bg-[#b7b7b7] rounded-lg border border-gray focus:ring-blue-500 dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
+                        <textarea name="message" id="message" rows={4} className="block p-2.5 w-full text-sm text-[#3d0240] bg-[#b7b7b7] rounded-lg border border-gray focus:ring-blue-500  dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your thoughts here..."></textarea>
                     </div>
 
                     {/*Button */}

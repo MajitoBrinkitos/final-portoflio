@@ -2,6 +2,8 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Link from "next/link";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Navbar() {
@@ -22,6 +24,13 @@ export default function Navbar() {
   });
 }, []);
 
+const handleDonationClick = () => {
+  toast.info("☕ Coffee eTransfered!! Thanks for your support!", {
+    position: "bottom-right",
+    autoClose: 5000,
+    theme: "colored"
+  });
+};
 
   return (
     <nav className="bg-[#ececec] shadow fixed top-0 w-full z-50 px-4 sm:px-6 lg:px-20">
@@ -54,6 +63,10 @@ export default function Navbar() {
             {/*Contact Button */}
             <Link
                 href="/contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleDonationClick();
+                }}
                 className="coffee-font fixed bottom-6 right-6 transition z-50 bg-[#45171d] hover:bg-[#fecea8] text-white hover:text-[#45171d] text-[24px] border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center sm:inline-flex items-center mb-2 hidden sm:bottom-4 sm:right-4"
             >
                 Buy me a coffee!
@@ -61,8 +74,8 @@ export default function Navbar() {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 13h2c1.1046 0 2 .8954 2 2s-.8954 2-2 2h-2.5M10 3c0 2.4-3 1.6-3 4m8-4c0 2.4-3 1.6-3 4m-7 4 .6398 6.398C5.84428 19.4428 7.56494 21 9.61995 21H10.38c2.0551 0 3.7757-1.5572 3.9802-3.602L15 11H5Z"/>
                 </svg>
                 <span className="animate-ping mx-2 h-3 w-3 rounded-full bg-[#fecea8] inline-block"></span>
-
             </Link>
+            <ToastContainer />
             </div>
       </div>
     </nav>
